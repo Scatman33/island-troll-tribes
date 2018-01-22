@@ -167,10 +167,6 @@ library Commands initializer onInit requires PublicLibrary
                 set display = COLOR_CODE[i]+"Player "+I2S(i+1)
                 call SetPlayerColorBJ(p,ConvertPlayerColor(i),true)
                 set currentcolor[PID] = i
-            elseif s=="-i am noob" then
-                call DisplayTimedTextToForce( GetPlayersAllies(p), 7, GENERAL_COLOR+"Ok. Once again, here are the build help locations. (The White Pings)" )
-                call PingMinimapLocForForceEx( GetPlayersAllies(p), GetRectCenter(gg_rct_vision), 5.00, bj_MINIMAPPINGSTYLE_FLASHY, 100, 100, 100 )
-                call PanCameraToTimedLocForPlayer( p, GetRectCenter(gg_rct_vision), 1.00 )
             endif
         endif
         
